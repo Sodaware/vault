@@ -152,7 +152,7 @@ class Vault_Cache_APC implements Vault_Cache
 	
 	public function __construct($options = array())
 	{
-		if (!$this->canUse()) {
+		if (!$this->isAvailable()) {
 			error_log('Vault: Cannot use Vault_Cache_APC - APC is not installed');
 		}
 	}
