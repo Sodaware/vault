@@ -30,3 +30,4 @@ The following cache types are currently supported:
 
 * *APC* - requires APC extension
 * *Volatile* - fallback in case no other cache methods work
+* *File* - Store cache values in files
