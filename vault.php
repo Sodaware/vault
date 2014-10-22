@@ -270,7 +270,7 @@ class Vault
      * 
      * @param string $key The cahe key to remove.
      */
-    public function remove($key)
+    public static function remove($key)
     {
         $this->_getCache()->remove($key);
     }
