@@ -234,9 +234,10 @@ class Vault
      * Get the "last modified" timestamp for a vault entry.
      *
      * @param string $key The name of the value to check.
+     * 
      * @return int The last modified timestamp, or false if value not present.
      */
-    public function getLastModified($key)
+    public static function getLastModified($key)
     {
         $data = self::_getCache()->fetch($key);
         return ($data) ? $data->getModified() : false;
@@ -245,6 +246,7 @@ class Vault
     /**
      * Fetch a value from the cache.
      * @param string $key The name of the value to fetch.
+     * 
      * @return mixed The found value, or null if not present.
      */
     public static function fetch($key)
